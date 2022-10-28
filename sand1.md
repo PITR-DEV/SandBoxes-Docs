@@ -79,6 +79,7 @@ A box brush is a solid box that can be used to create walls, floors, ceilings, e
 | Key      | Type                | Required | Description                    |
 | -------- | ------------------- | -------- | ------------------------------ |
 | type     | string              | yes      | Must be "box_brush".           |
+| material | string | no | Defaults to 'generic', must be a material key from  [Materials](materials.md) |
 | position | [Vector3](#vector3) | yes      | The position of the box brush. |
 | rotation | [Vector3](#vector3) | no       | The rotation of the box brush. |
 | scale    | [Vector3](#vector3) | yes      | The scale of the box brush.    |
