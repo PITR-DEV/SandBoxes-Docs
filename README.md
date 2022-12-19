@@ -1,5 +1,7 @@
-# SandBoxes Docs
+# Tundra Docs
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4a4daf4b-0bcd-42fe-8235-dbacae9890cf/deploy-status)](https://app.netlify.com/sites/sandboxes-docs/deploys)
+Tundra is currently in a private beta, but the documentation is available publicly.
 
-[Open Online](https://docs.sand.pitr.dev/)
+**You will not be able to install and set-up the editor without being given access first.**
+
+[View Docs](https://docs.tundra.pitr.dev)
