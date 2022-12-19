@@ -46,12 +46,12 @@
 
 <!-- table -->
 
-| Key    | Type                             | Required | Description                                              |
-| ------ | -------------------------------- | -------- | -------------------------------------------------------- |
-| format | int                              | yes      | The format version of the map.                           |
-| name   | string                           | yes      | The full display name of the map.                        |
-| author | string                           | no       | The author of the map. (Displayed as "Unknown" if empty) |
-| root   | [World Element](#world-elements) | yes      | The root element of the map.                             |
+| Key    | Type          | Required | Description                                              |
+| ------ | ------------- | -------- | -------------------------------------------------------- |
+| format | int           | yes      | The format version of the map.                           |
+| name   | string        | yes      | The full display name of the map.                        |
+| author | string        | no       | The author of the map. (Displayed as "Unknown" if empty) |
+| root   | World Element | yes      | The root element of the map.                             |
 
 ## World Elements
 
@@ -63,12 +63,12 @@ A group is a container for other elements. It can be used to organize your map o
 
 <!-- table -->
 
-| Key      | Type                               | Required | Description                                                                            |
-| -------- | ---------------------------------- | -------- | -------------------------------------------------------------------------------------- |
-| type     | string                             | yes      | Must be "group".                                                                       |
-| key      | string                             | no       | The key of the group. Can be used to reference the group, although it is not required. |
-| children | [World Element](#world-elements)[] | yes      | The children of the group.                                                             |
-| active   | bool                               | no       | Whether the group is active on start. Defaults to true.                                |
+| Key      | Type          | Required | Description                                                                            |
+| -------- | ------------- | -------- | -------------------------------------------------------------------------------------- |
+| type     | string        | yes      | Must be "group".                                                                       |
+| key      | string        | no       | The key of the group. Can be used to reference the group, although it is not required. |
+| children | World Element | yes      | The children of the group.                                                             |
+| active   | bool          | no       | Whether the group is active on start. Defaults to true.                                |
 
 ### Box Brush
 
@@ -76,13 +76,13 @@ A box brush is a solid box that can be used to create walls, floors, ceilings, e
 
 <!-- table -->
 
-| Key      | Type                | Required | Description                                                                  |
-| -------- | ------------------- | -------- | ---------------------------------------------------------------------------- |
-| type     | string              | yes      | Must be "box_brush".                                                         |
-| material | string              | no       | Defaults to 'generic', must be a material key from [Materials](materials.md) |
-| position | [Vector3](#vector3) | yes      | The position of the box brush.                                               |
-| rotation | [Vector3](#vector3) | no       | The rotation of the box brush.                                               |
-| scale    | [Vector3](#vector3) | yes      | The scale of the box brush.                                                  |
+| Key      | Type    | Required | Description                                                                            |
+| -------- | ------- | -------- | -------------------------------------------------------------------------------------- |
+| type     | string  | yes      | Must be "box_brush".                                                                   |
+| material | string  | no       | Defaults to 'generic', must be a material key from [Materials](../resources/materials) |
+| position | Vector3 | yes      | The position of the box brush.                                                         |
+| rotation | Vector3 | no       | The rotation of the box brush.                                                         |
+| scale    | Vector3 | yes      | The scale of the box brush.                                                            |
 
 ### Spawn Point
 
@@ -93,7 +93,7 @@ If there are no spawn points, players will spawn at Vector3.zero.
 
 <!-- table -->
 
-| Key      | Type                | Required | Description                      |
-| -------- | ------------------- | -------- | -------------------------------- |
-| type     | string              | yes      | Must be "spawn_point".           |
-| position | [Vector3](#vector3) | yes      | The position of the spawn point. |
+| Key      | Type    | Required | Description                      |
+| -------- | ------- | -------- | -------------------------------- |
+| type     | string  | yes      | Must be "spawn_point".           |
+| position | Vector3 | yes      | The position of the spawn point. |
