@@ -58,7 +58,7 @@ const config = {
         },
         items: [
           {
-            to: "category/setup",
+            to: "category/resources",
             activeBasePath: "docs",
             label: "Documentation",
           },
